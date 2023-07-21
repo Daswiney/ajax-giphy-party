@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Giphy Party</h1>
+  <form id="searchForm" autocomplete="off">
+    <input type="text" id="input" required placeholder="Enter a search term">
+    <select id="rating">
+      <option value="R">R level 4</option>
+      <option value="PG-13">PG-13 level 3</option>
+      <option value="PG">PG level 2</option>
+      <option value="G">G level 1</option>
+    </select>
+    <div id="rating-tooltip">results can vary up to selected rating</div>
+    <button type="submit">Search GIF</button>
+    <button type="button" id="remove">Remove All</button>
+  </form>
+  <ul id="generatedList"></ul>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
